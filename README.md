@@ -34,9 +34,10 @@ dplyr 1.1.2
 
 
 ### Installing
+The data is from https://www.treeequityscore.org/methodology?tab=data-download. I used the shp file only and uploaded the data to the shared box drive: All Files> Capstone Student> Tree Canopy Visualizations> il_tes.shp
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+I inserted a png image as the marker representing the user's location. Here is where the image is uploaded on/from box: All Files> Capstone Student> Tree Canopy Visualizations> Link to google drive folder with visualization contents.gdoc (click link provided in document)> PNGs for icons and pie charts> derbicustommarkerblue.png
+
 
 ### Executing program
 
@@ -45,11 +46,31 @@ dplyr 1.1.2
 ```
 code blocks for commands
 ```
+Executing Program
+How to run the program:
+1.Open RStudio.
+2.Create a new R script file.
+3. Copy the full code from: All Files > Capstone Student > Tree Canopy Visualizations > Link to google drive folder with visualization contents.gdoc > Current Visualization > derbi_map_5
+4.Paste the code into your new script in RStudio.
+5. Update file paths in the code if needed:
+For the shapefile:
+st_read("/Users/yourusername/path/to/il_tes.shp")
+file = "/Users/yourusername/path/to/derbicustommarkerblue.png"
+6. Run the entire script.
+7. The interactive Leaflet map will appear in the Viewer pane.
+8. To save the map as an HTML file, ensure the following line runs: saveWidget(leaflet_map, "derbi_map_5.html", selfcontained = TRUE)
+
 
 ## Help
 
 Any advise for common problems or issues.
-```
+If the map doesn’t display properly or an object returns as NULL, double-check the following:
+
+-Paths to shapefile and image marker are correct and accessible.
+-All required libraries are installed.
+-To install missing libraries: install.packages(c("leaflet", "sf", "dplyr", "htmltools", "base64enc", "htmlwidgets"))
+
+
 command to run if program contains helper info
 ```
 
