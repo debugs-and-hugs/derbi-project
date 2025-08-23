@@ -1,4 +1,4 @@
-**Initial Prototype "derbi_map_5"**
+**Initial Prototype "initialshadedmap"**
 This map is an initial prototype, meaning that it was used for usability testing and the heuristic evaluation portions of the study. This map represents the percent of land area covered by tree canopy in each census tract (Urbana and Champaign, IL). 
 ## Description
 This is an interactive map that shows tree canopy coverage per census block in Champaign and Urbana. There are outlines of each geoid, and the borders of these two towns. Although the user can zoom in and out, tree canopy data (shading and hovering feature) is only shown in Urbana and Champaign.
@@ -41,12 +41,6 @@ I inserted a png image as the marker representing the user's location. Here is w
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
-Executing Program
 How to run the program:
 1.Open RStudio.
 2.Create a new R script file.
@@ -62,24 +56,15 @@ file = "/Users/yourusername/path/to/derbicustommarkerblue.png"
 
 
 ## Help
-
-Any advise for common problems or issues.
 If the map doesn’t display properly or an object returns as NULL, double-check the following:
 
 -Paths to shapefile and image marker are correct and accessible.
 -All required libraries are installed.
 -To install missing libraries: install.packages(c("leaflet", "sf", "dplyr", "htmltools", "base64enc", "htmlwidgets"))
 
-
-command to run if program contains helper info
-```
-
 ## Authors
 
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+Amanda Graf (amanda11.15.14@gmail.com)
 
 ## Version History
 
